@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta author="Olikainen">
+	<title>Это новый сайт!</title>
 </head>
 <body>
 	<h1>Список всех записей в таблице</h1>
