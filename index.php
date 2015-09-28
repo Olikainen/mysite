@@ -1,3 +1,8 @@
+
+<?
+include "model.php";
+$rows=get_all_rows();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +13,9 @@
 <body>
 	<h1>Список всех записей в таблице</h1>
 		<ol>
+
 			<li>
-				<?php echo "сюда помещаем записи"; ?>
+				<?php echo $rows['titul'].'br'.$rows['text'] ; ?>
 			</li>
 		</ol>
 			
