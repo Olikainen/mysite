@@ -1,7 +1,7 @@
 <?php ob_start();?>
 
 <h3>Администрирование страницы</h3>
-	<form action="/mysite/add" method="POST" name="form1">
+	<form action="/mysite/index.php/add" method="POST" name="form1">
 	<table>
 		<tr>
 			<td>Заголовок статьи: </td>
@@ -9,7 +9,7 @@
 		</tr>
 		<tr>
 			<td>Автор статьи: </td>
-			<td><input type="text" name="" ="add_author"></td>
+			<td><input type="text" name="add_author"></td>
 		</tr>
 		<tr>
 			<td>Text: </td>
@@ -22,5 +22,4 @@
 		
 	</table>
 </form>
-<?php $content=ob_get_clean();?>
-<?php include ("View/layout.php");?>		
+<?php include ("View/list.php");?>		

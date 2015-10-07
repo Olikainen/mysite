@@ -34,11 +34,11 @@ function add_row()
 	$titul=$_REQUEST['add_titul'];
 	$content=$_REQUEST['add_content'];
 	$author=$_REQUEST['add_author'];
-	$date=new date();
+	$date=date("Y-m-d H:i:s");
 	$link=open_database_connection();
 	$sql="INSERT INTO `idpages` (`id`, `date`, `author`, `titul`, `text`) 
 	VALUES (NULL, '$date', '$author', '$titul', '$content')";
-	msql_query($msql);
+	mysql_query($sql);
 	close_database_connection($link);
 	return;
 }
