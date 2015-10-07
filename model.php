@@ -23,4 +23,23 @@ function get_all_rows()
 	close_database_connection($link);
 	return $rows;
 }
+function add_row()
+{
+	if(empty($_REQUEST['add_titul'])&&
+		empty($_REQUEST['add_content'])&&
+		empty($_REQUEST['add_author']))
+	{
+		return;
+	}
+	$titul=$_REQUEST['add_titul'];
+	$content=$_REQUEST['add_content'];
+	$author=$_REQUEST['add_author'];
+	$date=new date();
+	$link=open_database_connection();
+	$sql="INSERT INTO `idpages` (`id`, `date`, `author`, `titul`, `text`) 
+	VALUES (NULL, '$date', '$author', '$titul', '$content')";
+	msql_query($msql);
+	close_database_connection($link);
+	return;
+}
 ?>

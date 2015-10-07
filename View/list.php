@@ -12,7 +12,15 @@
 ?>
  		<ol>
 			<li>
-				<?php echo "Hello!";
+				<?php echo "Всем наилучшие поздравления!";
+				//echo $rows['titul'].<br>.$rows['text'] ; ?>
+			</li>
+			<li>
+				<?php echo "В 13.00 приглашаем всех на праздничный обед!";
+				//echo $rows['titul'].<br>.$rows['text'] ; ?>
+			</li>
+			<li>
+				<?php echo "После обеда танцы!";
 				//echo $rows['titul'].<br>.$rows['text'] ; ?>
 			</li>
 		</ol>
